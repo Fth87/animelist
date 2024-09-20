@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './Pages/Home.jsx';
 import App from './App.jsx';
-import DetailAnime from './Pages/detailAnime.jsx';
+import DetailAnime from './Pages/DetailAnime.jsx';
 
 const router = createBrowserRouter([
   {
