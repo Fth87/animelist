@@ -76,8 +76,8 @@ const HomePage = () => {
   return (
     <div className="home flex flex-col min-h-svh">
       <div className="container mx-auto mb-20 flex-1">
-        <Link to={'/'}>
-          <h1 className="text-2xl  md:text-4xl font-bold text-center mb-3 text-white pt-5 ">Anime List</h1>
+        <Link to={'https://instagram.com/fatihfwz'}>
+          <h1 className="text-2xl  md:text-4xl font-bold text-center mb-3 text-white pt-5 ">Anime List By Fatih</h1>
         </Link>
         <div className="ml-3 md:ml-0 sm:flex justify-between">
           <div>
