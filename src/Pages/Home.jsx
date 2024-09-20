@@ -79,7 +79,7 @@ const HomePage = () => {
         <Link to={'https://instagram.com/fatihfwz'}>
           <h1 className="text-2xl  md:text-4xl font-bold text-center mb-3 text-white pt-5 ">Anime List By Fatih</h1>
         </Link>
-        <div className="ml-3 md:ml-0 sm:flex justify-between">
+        <div className="ml-3 px-5 mb-3 md:ml-0 sm:flex justify-between">
           <div>
             <input onInput={(e) => setSearch(e.currentTarget.value)} className="py-2 px-3  border-slate-900 border-l-2 border-t-2 border-b-2 rounded-l my-6 text-xs md:text-lg lg:text-xl" placeholder="Search Anime" type="text" />
             <button onClick={getAnime} className="py-2 px-3 bg-slate-900 border-2 border-slate-900 text-white rounded-r hover:bg-slate-700 hover:border-slate-700 active:bg-slate-600 text-xs md:text-lg lg:text-xl">
@@ -150,16 +150,16 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 ">
+        <div className="px-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-4 ">
           {animes?.length > 0 && !isLoading ? (
             <>
               {animes.map((anime) => (
-                <div key={anime.mal_id} className="shadow m-3 md:m-0">
+                <div key={anime.mal_id} className="shadow ">
                   <Link to={`/detail/${anime.mal_id}`} className="group transition-all ease-in-out duration-700 relative">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className=" size-16 text-white absolute z-50 top-1/2 left-1/2 hidden group-hover:block  -translate-x-1/2 -translate-y-1/2">
                       <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
                     </svg>
-                    <div className="h-[300px] sm:h-[250px] md:h-[250px] lg:h-[270px] xl:h-[300px] 2xl:h-[320px] mb-3 overflow-hidden">
+                    <div className="h-[250px] sm:h-[250px] md:h-[250px] lg:h-[270px] xl:h-[300px] 2xl:h-[320px] mb-3 overflow-hidden">
                       <img className="group-hover:blur-sm w-full object-cover h-full group-hover:scale-105" src={anime.images.webp.large_image_url} alt="" />
                     </div>
                   </Link>

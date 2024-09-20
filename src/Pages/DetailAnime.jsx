@@ -23,7 +23,7 @@ const DetailAnime = () => {
   const [anime, setAnime] = useState([]);
 
   return (
-    <div className=" w-full h-full mx-4 md:mx-0">
+    <div className=" w-full h-full ">
       <div className=" bg-cover bg-center background-anime w-full h-full z-10 opacity-50 grayscale blur-lg" style={{ backgroundImage: `url(${anime?.images?.webp.large_image_url})` }}></div>
 
       <div className="container mx-auto z-50 relative  ">
@@ -33,8 +33,8 @@ const DetailAnime = () => {
 
         {!isLoading ? (
           <>
-            <div className=" grid grid-cols-12 justify-center md:gap-10">
-              <div className="col-span-11 md:col-span-8 pt-12 md:pt-10 ">
+            <div className="px-5 grid grid-cols-12 justify-center md:gap-10">
+              <div className="col-span-12 md:col-span-8 pt-12 md:pt-10 ">
                 <div className="flex text-sm mb-5">
                   <Link to={'/'} className="text-slate-200 font-light text-sm">
                     Home
@@ -75,7 +75,7 @@ const DetailAnime = () => {
                   <span className="font-bol d">Synopsis :</span> {anime.synopsis}
                 </p>
               </div>
-              <div className="col-span-11 md:col-span-4 px-6 text-slate-100 text-sm bg-slate-100/10 pt-10  mt-4 md:mt-0 pb-32">
+              <div className="col-span-12 md:col-span-4 px-6 text-slate-100 text-sm bg-slate-100/10 pt-10  mt-4 md:mt-0 pb-32">
                 <img className="w-full object-cover h-[350px] sm:h-[500px] md:h-[250px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] mb-3" src={anime.images.webp.large_image_url} alt="" />
                 <p>
                   <span className="font-bold"> Title : </span> {anime.title}
@@ -155,7 +155,7 @@ const DetailAnime = () => {
           </>
         ) : (
           <div className=" grid grid-cols-12 justify-center md:gap-10">
-            <div className="col-span-11 md:col-span-8 pt-12 md:pt-10 ">
+            <div className="col-span-12 md:col-span-8 pt-12 md:pt-10 ">
               <div className="flex text-sm mb-5">
                 <div className="bg-gray-500 animate-pulse w-80 h-12"></div>
               </div>
@@ -171,7 +171,7 @@ const DetailAnime = () => {
                 <div className="bg-gray-500 animate-pulse mt-3 w-5/6 h-[100px]"></div>
               </div>
             </div>
-            <div className="col-span-11 md:col-span-4 px-6 text-slate-100 text-sm bg-slate-100/10 pt-10  mt-4 md:mt-0 pb-10">
+            <div className="col-span-12 md:col-span-4 px-6 text-slate-100 text-sm bg-slate-100/10 pt-10  mt-4 md:mt-0 pb-10">
               <div className="w-full object-cover h-[350px] sm:h-[500px] md:h-[250px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] mb-3 bg-gray-500 animate-pulse" />
               <p>
                 <div className="bg-gray-500 animate-pulse mt-3 w-80 h-10"></div>
